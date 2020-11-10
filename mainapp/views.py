@@ -9,6 +9,10 @@ from django.views.decorators.csrf import csrf_exempt
 from braces.views import CsrfExemptMixin
 # Create your views here.
 
+
+def index(request):
+	return render(request, 'index.html')
+
 class query_view(CsrfExemptMixin, APIView):
 	authentication_classes = []
 
@@ -23,7 +27,7 @@ class query_view(CsrfExemptMixin, APIView):
 		if dsdata.is_valid():
 			print("valid")
 			dsdata.save()
+			return Response({'success' : 'true'})
 		else:
-			print(dsdata.error_message)
-		return Response({'a':'hi2'})
+			return Response({'success' : 'false'})
 
