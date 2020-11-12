@@ -6,7 +6,17 @@
 @font-face
 {
     font-family: PThin;
-    src: url('./pthin.otf');
+    src: url('./Proxima Nova Thin.otf');
+}
+@font-face
+{
+    font-family: MExtraBold;
+    src: url('./Montserrat-ExtraBold.ttf');
+}
+@font-face
+{
+    font-family: MThin;
+    src: url('./Montserrat-Thin.ttf');
 }
 body {
     margin: 0;
@@ -24,7 +34,7 @@ span {
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url('./inspiration4edited.png');
+    background-image: url('./websitedesignkolkata.png');
     background-size: cover;
 }
 .end-left {
@@ -54,7 +64,8 @@ span {
   font-family: PBold;
   font-weight: 50;
   display: block;
-  font-size: 10rem;
+  font-size: 12rem;
+  letter-spacing: -0.8rem;
 }
 .orbs span {
   color: white;
@@ -73,12 +84,12 @@ span {
 }
 .glow {
   opacity: 0;
-  font-family: PBold;
+  font-family: MExtraBold;
   font-weight: 300;
-  color: white;
+  color: rgba(255, 255, 255, 0.99);
   font-size: 1.8rem;
   position: absolute;
-  top: 25rem;
+  top: 26rem;
   width: 100%;
   text-align: center;
 }
@@ -94,21 +105,24 @@ navbar ul
 navbar ul li
 {
     display: inline-block;
-    font-family: PBold;
+    font-family: MExtraBold;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 2px rgba(0, 2, 1, 0.17);
 }
 navbar ul li a
 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-right: 1rem;
-    color: white;
+    color:rgba(255, 255, 255, 0.87);
     padding: 1rem;
     border-radius: 20px;
+    
 }
 navbar ul li a:hover
 {
     cursor: pointer;
-    background: white;
-    color: black;
+    background:rgba(255, 255, 255, 0.99);
+    color:rgba(10, 3, 60, 0.87);
 }
 #navbar_btn
 {
@@ -132,12 +146,13 @@ navbar ul li a:hover
 }
 #as_heading
 {
-    font-family: PBold;
+    font-family: MExtraBold;
     font-size: 5rem;
     margin: 0;
-    color: #091C4D;
+    color:rgba(10, 3, 60, 0.87);
     z-index: 10;
     transform: translateY(10%);
+    text-shadow: -2px 3px 2px rgba(0, 189, 188, 0.36);
 }
 #card
 {
@@ -145,28 +160,29 @@ navbar ul li a:hover
     width: 60%;
     margin: auto;
     background: white;
-    border-radius: 50px;
+    border-radius: 2rem;
     margin-top: -4rem;
     padding: 0 2rem;
-    box-shadow: 0px 10px 40px rgba(2,193,194,0.4);
+    box-shadow: 0px 10px 40px rgba(2,193,194,0.36);
 }
 #card p
 {
     padding-top: 5rem;
     font-family: PThin;
+    font-size: 1.3rem;
 }
 #third_block
 {
-    height: 100vh;
+    height: 105vh;
     position: relative;
     max-height: 800px;
 }
 #third_block h1, #fourth_block h1, #fifth_block h1
 {
-    font-family: PBold;
+    font-family: MExtraBold;
     margin: 0 0 0 2rem !important;
     padding-top: 2rem;
-    color: #02bdbc;
+    color:rgba(2, 189, 188, 0.67);
 }
 .carousel {
 	height: 100% !important;
@@ -177,8 +193,8 @@ navbar ul li a:hover
 
 .carousel .carousel-item {
 	cursor: grab;
-	width: 30rem !important;
-    height: 30rem !important;
+	width: 35rem !important;
+    height: 35rem !important;
     background: black;
     border-radius: 50%;
     text-align: center;
@@ -193,9 +209,9 @@ navbar ul li a:hover
 }
 
 .carousel .carousel-item h3 {
-	color: #0a033c;
-	font-size: 2em;
-	font-weight: bold;
+    font-family: MExtraBold;
+    color:rgba(10, 3, 60, 0.87);
+	font-size: 2rem;
 	margin: 0;
 	padding: 1rem 1rem;
     padding-top: 2rem;
@@ -204,7 +220,7 @@ navbar ul li a:hover
 .carousel .carousel-item p
 {
     font-family: PThin;
-    color: black;
+    color: rgba(10, 3, 60, 0.99);
     margin: 2rem 5rem 0;
 }
 #third_block ul
@@ -279,19 +295,20 @@ navbar ul li a:hover
     display: -webkit-inline-box;
     text-align: center;
     height: 40rem;
-    width: 22rem;
+    width: 25rem;
     margin: 2rem 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0px 15px 40px rgba(2,193,194,0.4);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(2,193,194,0.36);
     transition: height .5s ease-out;
 }
 #fourth_block ul li h3
 {
-    color: #02bdbc;
+    font-family: PBold;
+    color:rgba(2, 189, 188, 0.87);
     display: inline-block;
     white-space: initial;
     margin: 1rem 0 0;
-    font-family: PBold;
+    font-size: 3rem;
 }
 .pc
 {
@@ -299,16 +316,16 @@ navbar ul li a:hover
 }
 .pc h5
 {
-    font-family: PBold;
+    font-family: MExtraBold;
     font-size: 4rem;
-    color: #02bdbc;
+    color: rgba(2, 189, 188, 0.87);
     margin-top: 0;
 }
 .pc h6
 {
     font-family: PThin;
-    font-size: 2rem;
-    color: #02bdbc;
+    font-size: 1.5rem;
+    color:rgba(2, 189, 188, 0.87);
     margin-bottom: 0;
 }
 .pc
@@ -318,7 +335,10 @@ navbar ul li a:hover
 .pc ul
 {
     height: 80% !important;
-    margin: 0 !important;
+    margin: 1.5rem 0 0 0 !important;
+    font-size: 1.6rem;
+    font-family: PThin;
+    text-align: left !important;
 }
 #fifth_block
 {
@@ -387,6 +407,7 @@ footer
     text-align: center;
     font-family: PThin;
     margin-top: 5rem;
+    color : rgba(10, 3, 60, 0.99);
 }
 .footer_div
 {
@@ -442,7 +463,8 @@ footer
     .orbs span
     {
         font-size: 5rem;
-        left: 50%;
+        left: 57%;
+        letter-spacing: -5px;
     }
     .orbs span:first-child
     {
@@ -450,24 +472,26 @@ footer
     }
     #as_heading
     {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     #card
     {
         width: 80%;
         height: 90%;
         margin-top: -1.5rem;
+        border-radius: 8px;
     }
     #card p
     {
         padding: .5rem;
         padding-top: 2rem;
         margin: 0;
+        font-size: 1.2rem;
     }
     #third_block
     {
         text-align: center;
-        height: 70vh;
+        height: 80vh;
     }
     #third_block ul
     {
@@ -482,8 +506,9 @@ footer
     }
     .carousel .carousel-item
     {
-        width:20rem !important;
-        height: 20rem !important;
+        width: 28rem !important;
+        height: 28rem !important;
+        font-size: 0.8rem;
     }
     #third_block h1
     {
@@ -491,7 +516,7 @@ footer
     }
     .carousel .carousel-item p
     {
-        margin: 0;
+        margin: 0.9rem;
     }
     #pc1, #pc2, #pc3
     {

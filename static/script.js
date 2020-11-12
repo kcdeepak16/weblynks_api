@@ -31,7 +31,7 @@ setTimeout(dropOrbs, 400);
 
 function myFunction(x) {
   if (x.matches) {
-    document.querySelector(".glow").innerHTML = "Web Solutions <br> Web Hosting <br> Logo Design";
+    document.querySelector(".glow").innerHTML = "In Budget <br> In Time ";
   }
 }
 
