@@ -308,7 +308,7 @@ navbar ul li a:hover
     display: inline-block;
     white-space: initial;
     margin: 1rem 0 0;
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 .pc
 {
@@ -317,14 +317,14 @@ navbar ul li a:hover
 .pc h5
 {
     font-family: MExtraBold;
-    font-size: 4rem;
+    font-size: 3rem;
     color: rgba(2, 189, 188, 0.87);
     margin-top: 0;
 }
 .pc h6
 {
     font-family: PThin;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:rgba(2, 189, 188, 0.87);
     margin-bottom: 0;
 }
@@ -336,7 +336,7 @@ navbar ul li a:hover
 {
     height: 80% !important;
     margin: 1.5rem 0 0 0 !important;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family: PThin;
     text-align: left !important;
 }
