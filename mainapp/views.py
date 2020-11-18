@@ -31,3 +31,7 @@ class query_view(CsrfExemptMixin, APIView):
 		else:
 			return Response({'success' : 'false'})
 
+def sitemap(request):
+	return render(request, 'sitemap.xml')
+
+
