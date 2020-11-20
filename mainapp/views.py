@@ -11,7 +11,8 @@ from braces.views import CsrfExemptMixin
 
 
 def index(request):
-	return render(request, 'index.html')
+	all_services = services.objects.all()
+	return render(request, 'index.html',{'all_services' : all_services})
 
 class query_view(CsrfExemptMixin, APIView):
 	authentication_classes = []
